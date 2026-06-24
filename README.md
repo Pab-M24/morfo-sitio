@@ -86,5 +86,5 @@ gh repo create Pab-M24/morfo-sitio --public --source=. --remote=origin --push
 npx vercel --prod
 ```
 
-**URL Vercel:** <!-- PENDIENTE: agregar después del deploy -->  
+**URL Vercel:** https://morfo-sitio.vercel.app  
 **Dominio:** <!-- PENDIENTE: confirmar dominio con cliente -->
