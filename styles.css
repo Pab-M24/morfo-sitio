@@ -14,6 +14,7 @@
   --neutro:     #1A1A1A;
   --texto:      #E8E0D6;
   --texto-bajo: #7A7068;
+  --verde:      #2B3B2B;   /* verde oliva del interior y del logo */
 
   --font-serif: 'Cormorant Garamond', Georgia, serif;
   --font-sans:  'DM Sans', system-ui, sans-serif;
@@ -98,6 +99,28 @@ h1, h2, h3, h4 {
   opacity: 0.5;
   max-width: 220px;
   line-height: 1.6;
+}
+
+/* === HERO GHOST TEXT (referencia al letrero MORFO del local) === */
+.hero-ghost-word {
+  position: absolute;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: clamp(140px, 22vw, 320px);
+  color: var(--carmín);
+  opacity: 0.03;
+  letter-spacing: 0.22em;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+  white-space: nowrap;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+  .hero-ghost-word { display: none; }
 }
 
 /* === FADE IN ON SCROLL === */

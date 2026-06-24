@@ -9,7 +9,7 @@
   <meta property="og:description" content="La gastronomía callejera elevada a experiencia premium. León, Gto.">
   <!-- PENDIENTE: og:image con foto del interior o platillo estrella -->
   <meta property="og:type" content="website">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg'><text y='32' font-size='32'>🦋</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%230D0D0D'/%3E%3Ccircle cx='16' cy='16' r='14' fill='%232B3B2B'/%3E%3Ctext x='16' y='23' font-size='18' font-weight='bold' font-family='Georgia%2Cserif' text-anchor='middle' fill='%23C0392B'%3EM%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
@@ -68,8 +68,11 @@
 
     <!--
       Firma visual: mariposa-tenedor del logo de Morfo,
-      redibujada como línea fina — solo visible ≥1024px.
+      redibujada como línea fina, solo visible en viewport mayor a 1024px.
     -->
+    <!-- Texto fantasma: referencia directa al letrero MORFO en la pared del local -->
+    <span class="hero-ghost-word" aria-hidden="true">MORFO</span>
+
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 400 400"
@@ -191,7 +194,7 @@
       <!-- Platillo 1 -->
       <article class="dish-card">
         <div class="img-placeholder" style="height:280px">
-          <span>Hamburguesa Morfo — pan brioche con sesame seeds, fondo oscuro</span>
+          <span>Hamburguesa Morfo: pan brioche con sesame seeds, fondo oscuro</span>
         </div>
         <!-- FOTO: hamburguesa Morfo con pan brioche y sesame seeds, fondo oscuro -->
         <div class="dish-info">
@@ -204,7 +207,7 @@
       <!-- Platillo 2 -->
       <article class="dish-card">
         <div class="img-placeholder" style="height:280px">
-          <span>Birria de Gyzkas — servida en platón negro del restaurante</span>
+          <span>Birria de Gyzkas: servida en platón negro del restaurante</span>
         </div>
         <!-- FOTO: birria de gyzkas servida en platón negro del restaurante -->
         <div class="dish-info">
@@ -217,21 +220,20 @@
       <!-- Platillo 3 -->
       <article class="dish-card">
         <div class="img-placeholder" style="height:280px">
-          <span>Ceviche en Coco — con aguacate y chips de tortilla verde, fondo negro</span>
+          <span>Ceviche en Coco: con aguacate y chips de tortilla verde, fondo negro</span>
         </div>
         <!-- FOTO: ceviche en coco con aguacate y chips de tortilla verde, fondo negro -->
         <div class="dish-info">
           <h3 class="dish-name">Ceviche en Coco</h3>
           <p class="dish-desc">Ceviche con aguacate, semillas de ajonjolí, chips de tortilla verde, servido en coco.</p>
-          <!-- PENDIENTE: confirmar precio con cliente -->
-          <span class="dish-price-pending">Precio por confirmar</span>
+          <!-- PENDIENTE: confirmar precio del Ceviche en Coco con cliente -->
         </div>
       </article>
 
       <!-- Platillo 4 -->
       <article class="dish-card">
         <div class="img-placeholder" style="height:280px">
-          <span>Taco de Birria al Vapor — en tazón negro con consomé naranja</span>
+          <span>Taco de Birria al Vapor: en tazón negro con consomé naranja</span>
         </div>
         <!-- FOTO: taco de birria al vapor en tazón negro con consomé naranja -->
         <div class="dish-info">
@@ -259,13 +261,13 @@
       <span class="section-label">El Lugar</span>
       <h2>Selva. Luces.<br>Buena comida.</h2>
       <p>El techo tiene raíces. Las lámparas son de oro. La vajilla es negra. Y la comida hace que todo eso importe menos.</p>
-      <p>Morfo está en Blvd. Valtierra &mdash; abierto desde las 2 pm.</p>
+      <p>Morfo está en Blvd. Valtierra. Abierto desde las 2 pm.</p>
       <p class="ambiente-musica">Música en vivo &middot; Jueves a Sábado desde las 8:30 pm</p>
     </div>
 
     <div class="ambiente-img">
       <div class="img-placeholder" style="height:520px">
-        <span>Interior Morfo — mesas largas de madera teca con vajilla negra y plantas tropicales al fondo</span>
+        <span>Interior Morfo: mesas largas de madera teca con vajilla negra y plantas tropicales al fondo</span>
       </div>
       <!-- FOTO: interior Morfo, mesa larga con sillas cognac y palmas al fondo -->
     </div>
@@ -391,7 +393,7 @@
         height="350"
         allowfullscreen=""
         loading="lazy"
-        title="Ubicación Morfo Cocina Urbana Premium — León, Gto."
+        title="Ubicación Morfo Cocina Urbana Premium, León, Gto."
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     </div>
