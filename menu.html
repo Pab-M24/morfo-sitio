@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morfo | Cocina Urbana Premium · León, Gto.</title>
+  <meta name="description" content="Menú completo de Morfo Cocina Urbana Premium. Entradas, tacos, hamburguesas, platos fuertes, parrilla, postres y bebidas. León, Gto.">
+  <meta property="og:title" content="Menú — Morfo | Cocina Urbana Premium">
+  <meta property="og:description" content="La gastronomía callejera elevada a experiencia premium. León, Gto.">
+  <!-- PENDIENTE: og:image con foto del interior o platillo estrella -->
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg'><text y='32' font-size='32'>🦋</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ====================================================
+       NAVBAR
+  ===================================================== -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="navbar-logo" aria-label="Morfo inicio">
+      <!-- PENDIENTE: reemplazar span por <img src="logo.png" alt="Morfo" class="navbar-logo-img"> -->
+      <span class="navbar-logo-text">MORFO<span>.</span></span>
+    </a>
+
+    <ul class="navbar-nav">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="menu.html">Menú</a></li>
+      <li><a href="index.html#reservaciones">Reservaciones</a></li>
+      <li><a href="index.html#ambiente">Nosotros</a></li>
+      <li>
+        <a href="https://wa.me/524791531472?text=Hola%2C%20quiero%20reservar%20una%20mesa%20en%20Morfo"
+           class="btn-reservar-nav"
+           target="_blank"
+           rel="noopener noreferrer">
+          Reservar mesa
+        </a>
+      </li>
+    </ul>
+
+    <button class="navbar-hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Menú móvil -->
+  <div class="navbar-mobile-menu" id="mobileMenu" role="dialog" aria-label="Menú de navegación">
+    <a href="index.html">Inicio</a>
+    <a href="menu.html">Menú</a>
+    <a href="index.html#reservaciones">Reservaciones</a>
+    <a href="index.html#ambiente">Nosotros</a>
+    <a href="https://wa.me/524791531472?text=Hola%2C%20quiero%20reservar%20una%20mesa%20en%20Morfo"
+       target="_blank" rel="noopener noreferrer">
+      Reservar mesa
+    </a>
+  </div>
+
+
+  <!-- ====================================================
+       HERO DEL MENÚ
+  ===================================================== -->
+  <section class="menu-hero">
+    <h1>Menú</h1>
+    <span class="menu-hero-supra">Cocina Urbana Premium &middot; León, Gto.</span>
+  </section>
+
+
+  <!-- ====================================================
+       TABS DE NAVEGACIÓN
+  ===================================================== -->
+  <div class="menu-tabs-wrapper">
+    <div class="menu-tabs" role="tablist" aria-label="Categorías del menú">
+      <button class="tab-btn active" data-tab="entradas"     role="tab" aria-selected="true"  aria-controls="entradas">Entradas</button>
+      <button class="tab-btn"        data-tab="tacos"        role="tab" aria-selected="false" aria-controls="tacos">Tacos</button>
+      <button class="tab-btn"        data-tab="ensaladas"    role="tab" aria-selected="false" aria-controls="ensaladas">Ensaladas</button>
+      <button class="tab-btn"        data-tab="hamburguesas" role="tab" aria-selected="false" aria-controls="hamburguesas">Hamburguesas</button>
+      <button class="tab-btn"        data-tab="fuertes"      role="tab" aria-selected="false" aria-controls="fuertes">Platos Fuertes</button>
+      <button class="tab-btn"        data-tab="postres"      role="tab" aria-selected="false" aria-controls="postres">Postres</button>
+      <button class="tab-btn"        data-tab="bebidas"      role="tab" aria-selected="false" aria-controls="bebidas">Bebidas</button>
+    </div>
+  </div>
+
+
+  <!-- ====================================================
+       CONTENIDO DEL MENÚ
+  ===================================================== -->
+  <div class="menu-content">
+
+    <!-- ── ENTRADAS ──────────────────────────────────── -->
+    <section class="menu-section active" id="entradas" role="tabpanel" aria-labelledby="tab-entradas">
+      <h2 class="menu-section-title">Entradas</h2>
+
+      <div class="menu-items">
+
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <span class="menu-item-name">Empanadas Queso</span>
+          </div>
+          <span class="menu-item-price">$49</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <span class="menu-item-name">Empanadas Filete</span>
+          </div>
+          <span class="menu-item-price">$79</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <span class="menu-item-name">Guacamole Tatemado</span>
+            <span class="menu-item-desc">Servido con tortillas de comal.</span>
+          </div>
+          <span class="menu-item-price">$175</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <span class="menu-item-name">Guacamole con Croma</span>
+            <span class="menu-item-desc">Servido con tortillas de comal.</span>
+          </div>
+          <span class="menu-item-price">$245</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <span class="menu-item-name">Ceviche Verde</span>
+            <span class="menu-item-desc">Aguachile verde, pico de gallo, pepino, aguacate, chicharrón de pulpo, tostadas.</span>
+          </div>
+          <span class="menu-item-price">$213</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <span class="menu-item-name">Tostaditas de Atún</span>
+            <span class="menu-item-desc">Atún marinado en salsa tare, chips de col, aguacate, granizado de cilantro. 6 piezas.</span>
+          </div>
+          <span class="menu-item-price">$180</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <span class="menu-item-name">Costillitas de Elote</span>
+            <span class="menu-item-desc">Asadas con mantequilla, mayonesa de chipotle, Cotija y chile del que pica.</span>
+          </div>
+          <span class="menu-item-price">$110</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <span class="menu-item-name">Sopecitos de Filete y Pulpo</span>
+            <span class="menu-item-desc">Sopecitos de masa rellenos de filete y pulpo, frijoles de olla, crema, chorizo, pulpo y salsa verde criolla. 6 piezas.</span>
+          </div>
+          <span class="menu-item-price">$185</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <span class="menu-item-name">Gordita de Prensado y Camarón</span>
+            <span class="menu-item-desc">Gordita de maíz quebrado, chicharrón prensado, camarón. 2 piezas.</span>
+          </div>
+          <span class="menu-item-price">$65</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <span class="menu-item-name">Papa al Sartén</span>
+            <span class="menu-item-desc">Papa asada con mantequilla, crema ácida, costra de queso, tocino y jalapeño.</span>
+          </div>
+          <span class="menu-item-price">$142</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <span class="menu-item-name">Jocoque Toreado</span>
+            <span class="menu-item-desc">Jocoque con serrano, colatura y chiles toreados, pepita de calabaza y almendras tostadas. Para piña.</span>
+          </div>
+          <span class="menu-item-price">$172</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <span class="menu-item-name">Gyzkas de Birria de Res</span>
+            <span class="menu-item-desc">Gyzkas (tlayudas) de costras de jamón, limón, mix de alejas. 10 piezas.</span>
+          </div>
+          <span class="menu-item-price">$165</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <span class="menu-item-name">Coliflor Rostizada</span>
+            <span class="menu-item-desc">Hummus de garbanzo y chipotle, mayonesa de ají negro, salsa macha, limón amarillo.</span>
+          </div>
+          <span class="menu-item-price">$160</span>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ── TACOS ──────────────────────────────────────── -->
+    <section class="menu-section" id="tacos" role="tabpanel" aria-labelledby="tab-tacos">
+      <h2 class="menu-section-title">Tacos</h2>
+
+      <div class="menu-items">
+
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <span class="menu-item-name">Filete</span>
+            <span class="menu-item-desc">Puntas de filete, costra de queso, aguacate.</span>
+          </div>
+          <span class="menu-item-price">$85</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <span class="menu-item-name">Camarón Tempura</span>
+            <span class="menu-item-desc">Camarón en tempura, col, mayonesa de chipotle.</span>
+          </div>
+          <span class="menu-item-price">$105</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <span class="menu-item-name">Taquitos al Vapor de Birria de Res</span>
+            <span class="menu-item-desc">Relleno de fajitas de res cocinada a baja temperatura. 4 piezas.</span>
+          </div>
+          <span class="menu-item-price">$175</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <span class="menu-item-name">Tacos Tatemados de Pulpo</span>
+            <span class="menu-item-desc">Relleno de tacos de pulpo con chorizo, pulpo asado, salsa de chiles secos, escabeche de cebolla. 3 piezas.</span>
+          </div>
+          <span class="menu-item-price">$200</span>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ── ENSALADAS ──────────────────────────────────── -->
+    <section class="menu-section" id="ensaladas" role="tabpanel" aria-labelledby="tab-ensaladas">
+      <h2 class="menu-section-title">Ensaladas</h2>
+
+      <div class="menu-items">
+
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <span class="menu-item-name">Taquitos de Ensalada César</span>
+            <span class="menu-item-desc">Taquito de lechuga, pollo asado, aderezo cesar casero, crutón de masa y queso Parmesano. 8 piezas.</span>
+          </div>
+          <span class="menu-item-price">$185</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <span class="menu-item-name">Ensalada a las Brasas</span>
+            <span class="menu-item-desc">Brócoli, aderezo de manzana amarilla, ejotes asados, cacahuate, aderezo de queso añejo, crutón de masa.</span>
+          </div>
+          <span class="menu-item-price">$185</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <span class="menu-item-name">Ensalada Verde</span>
+            <span class="menu-item-desc">Mezcla de verdes, pepino, espárragos, aceitunas, jitomates, cebolla, queso azul, vinagre de limón amarillo.</span>
+          </div>
+          <span class="menu-item-price">$160</span>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ── HAMBURGUESAS ───────────────────────────────── -->
+    <section class="menu-section" id="hamburguesas" role="tabpanel" aria-labelledby="tab-hamburguesas">
+      <h2 class="menu-section-title">Hamburguesas</h2>
+
+      <div class="menu-items">
+
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <span class="menu-item-name">Hamburguesa Morfo</span>
+            <span class="menu-item-desc">Pan brioche artesanal, carne Angus, sosa de cebolla, queso, ensalada de col, papas fritas caseras.</span>
+          </div>
+          <span class="menu-item-price">$240</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <span class="menu-item-name">Morfo BBQ</span>
+            <span class="menu-item-desc">Pan brioche, costillas de cerdo ahumadas, bbq, ensalada de col, papas fritas.</span>
+          </div>
+          <span class="menu-item-price">$225</span>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ── PLATOS FUERTES ─────────────────────────────── -->
+    <section class="menu-section" id="fuertes" role="tabpanel" aria-labelledby="tab-fuertes">
+      <h2 class="menu-section-title">Platos Fuertes</h2>
+
+      <!-- Pastas -->
+      <div class="menu-subsection">
+        <p class="menu-subsection-title">Pastas</p>
+        <div class="menu-items">
+
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Lasaña de Pollo</span>
+              <span class="menu-item-desc">Porciones rellenas de pollo y hongos, salsa de queso.</span>
+            </div>
+            <span class="menu-item-price">$250</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Pappardelle Artesanal</span>
+              <!-- PENDIENTE: confirmar descripción completa con cliente -->
+              <span class="menu-item-note">Descripción por confirmar</span>
+            </div>
+            <span class="menu-item-price">$125</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Rigatoni</span>
+              <!-- PENDIENTE: confirmar descripción completa con cliente -->
+              <span class="menu-item-note">Descripción por confirmar</span>
+            </div>
+            <span class="menu-item-price">$125</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Platos principales -->
+      <div class="menu-subsection">
+        <p class="menu-subsection-title">Del fuego</p>
+        <div class="menu-items">
+
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Charola de Pollo Frito</span>
+              <span class="menu-item-desc">Pollo frito paceado, puré de papa, ensalada de col, brioche.</span>
+            </div>
+            <span class="menu-item-price">$265</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Costillas BBQ</span>
+              <span class="menu-item-desc">Puré de papa, ensalada de col, brioche.</span>
+            </div>
+            <span class="menu-item-price">$305</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Chamorro de Cantina</span>
+              <span class="menu-item-desc">Chamorro cocinado a la mexicana tradicional, adobo norteño, escabeche de cebolla, tortillas de harina.</span>
+            </div>
+            <span class="menu-item-price">$375</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Salmón en Salsa de Maple</span>
+              <span class="menu-item-desc">Salmón asado, salsa de maple y whiskey, vegetales asados, puré de papa.</span>
+            </div>
+            <span class="menu-item-price">$355</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Salmón Alcaraparado</span>
+              <span class="menu-item-desc">Salmón asado, salsa de mantequilla, ajo y alcaparras, vegetales asados, puré de papa.</span>
+            </div>
+            <span class="menu-item-price">$360</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Parrilla -->
+      <div class="menu-subsection">
+        <p class="menu-subsection-title">Parrilla</p>
+        <div class="menu-items">
+
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Pollo con Chimichurri de Cilantro</span>
+              <span class="menu-item-desc">Pollo entero con ensalada de col roja y papas. Rinde 4 personas aprox.</span>
+            </div>
+            <span class="menu-item-price">$600</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Aguachile de Picaña</span>
+              <span class="menu-item-desc">Picaña a las brasas, aguachile negro, papas, tacos dorados de papa, escabeche de cebolla. 500 g.</span>
+            </div>
+            <span class="menu-item-price">$480</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Arrachera con Chimichurri de Cilantro</span>
+              <span class="menu-item-desc">Servida con ensalada de la casa y papas a la ranchera. 500 g.</span>
+            </div>
+            <span class="menu-item-price">$680</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Filete de Res Flameado</span>
+              <span class="menu-item-desc">Servido con puré de papa, hongos salteados, demiglace de cilantro. 350 g.</span>
+            </div>
+            <span class="menu-item-price">$780</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">New York Prime</span>
+              <span class="menu-item-desc">Servido con papas fritas caseras, jugo de carne, cebollas asadas. 350 g.</span>
+            </div>
+            <span class="menu-item-price">$715</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Menú Infantil -->
+      <div class="menu-subsection">
+        <p class="menu-subsection-title">Menú Infantil</p>
+        <div class="menu-items">
+
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Pasta con Pollo</span>
+              <span class="menu-item-desc">Pasta con pollo en salsa al pastor.</span>
+            </div>
+            <span class="menu-item-price">$105</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Nuggets de Pollo</span>
+              <span class="menu-item-desc">Servido con papas a la francesa.</span>
+            </div>
+            <span class="menu-item-price">$80</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Arrachera</span>
+              <span class="menu-item-desc">Servida con papas.</span>
+            </div>
+            <span class="menu-item-price">$160</span>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- ── POSTRES ────────────────────────────────────── -->
+    <section class="menu-section" id="postres" role="tabpanel" aria-labelledby="tab-postres">
+      <h2 class="menu-section-title">Postres</h2>
+
+      <div class="menu-items">
+
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <span class="menu-item-name">Crepas Suzette</span>
+            <span class="menu-item-desc">Preparadas y flameadas en mesa, con helado de vainilla francesa.</span>
+          </div>
+          <span class="menu-item-price">$145</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <span class="menu-item-name">Crepa de Cajeta</span>
+            <span class="menu-item-desc">Preparadas y flameadas en mesa, con helado de vainilla francesa.</span>
+          </div>
+          <span class="menu-item-price">$145</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <span class="menu-item-name">Pan de Elote</span>
+            <span class="menu-item-desc">Bizcocho suave, dulce de leche, salsa de glorias, helado de cajeta.</span>
+          </div>
+          <span class="menu-item-price">$160</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <span class="menu-item-name">Tarta de Nuez</span>
+            <span class="menu-item-desc">Servida con chocolate.</span>
+          </div>
+          <span class="menu-item-price">$145</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <span class="menu-item-name">Tiramisú</span>
+            <!-- PENDIENTE: confirmar descripción con cliente -->
+            <span class="menu-item-note">Descripción por confirmar</span>
+          </div>
+          <span class="menu-item-price">$145</span>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ── BEBIDAS ────────────────────────────────────── -->
+    <section class="menu-section" id="bebidas" role="tabpanel" aria-labelledby="tab-bebidas">
+      <h2 class="menu-section-title">Bebidas</h2>
+
+      <!-- Sin alcohol -->
+      <div class="menu-subsection">
+        <p class="menu-subsection-title">Sin Alcohol</p>
+        <div class="menu-items">
+          <div class="menu-item">
+            <div class="menu-item-info"><span class="menu-item-name">Agua Mineral 355 ml</span></div>
+            <span class="menu-item-price">$37</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><span class="menu-item-name">Agua Mineral Topo Chico 355 ml</span></div>
+            <span class="menu-item-price">$45</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><span class="menu-item-name">Agua Perrier 330 ml</span></div>
+            <span class="menu-item-price">$59</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><span class="menu-item-name">Agua de Piedra Mineral 650 ml</span></div>
+            <span class="menu-item-price">$100</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><span class="menu-item-name">Agua Quina 296 ml</span></div>
+            <span class="menu-item-price">$37</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><span class="menu-item-name">Coca Cola 355 ml</span></div>
+            <span class="menu-item-price">$37</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><span class="menu-item-name">Coca Cola Light 355 ml</span></div>
+            <span class="menu-item-price">$37</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><span class="menu-item-name">Coca Cola Zero 355 ml</span></div>
+            <span class="menu-item-price">$37</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><span class="menu-item-name">Squirt 355 ml</span></div>
+            <span class="menu-item-price">$37</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><span class="menu-item-name">Sprite 355 ml</span></div>
+            <span class="menu-item-price">$37</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><span class="menu-item-name">Ginger Ale 296 ml</span></div>
+            <span class="menu-item-price">$37</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><span class="menu-item-name">Manzanita 355 ml</span></div>
+            <span class="menu-item-price">$37</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cervezas -->
+      <div class="menu-subsection">
+        <p class="menu-subsection-title">Cervezas</p>
+        <div class="menu-items">
+          <div class="menu-item">
+            <div class="menu-item-info"><span class="menu-item-name">XX Lager 325 ml</span></div>
+            <span class="menu-item-price">$45</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><span class="menu-item-name">XX Ámbar 325 ml</span></div>
+            <span class="menu-item-price">$45</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><span class="menu-item-name">Indio 325 ml</span></div>
+            <span class="menu-item-price">$39</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><span class="menu-item-name">Heineken 355 ml</span></div>
+            <span class="menu-item-price">$55</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><span class="menu-item-name">Heineken 0.0 355 ml</span></div>
+            <span class="menu-item-price">$49</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><span class="menu-item-name">Bohemia Clara 355 ml</span></div>
+            <span class="menu-item-price">$49</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><span class="menu-item-name">Bohemia Obscura 355 ml</span></div>
+            <span class="menu-item-price">$49</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><span class="menu-item-name">Bohemia Cristal 355 ml</span></div>
+            <span class="menu-item-price">$49</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><span class="menu-item-name">Amstel Ultra 355 ml</span></div>
+            <span class="menu-item-price">$55</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><span class="menu-item-name">Tecate Roja 325 ml</span></div>
+            <span class="menu-item-price">$39</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><span class="menu-item-name">Tecate Light 325 ml</span></div>
+            <span class="menu-item-price">$39</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><span class="menu-item-name">Miller 355 ml</span></div>
+            <span class="menu-item-price">$55</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><span class="menu-item-name">Vaso Michelado</span></div>
+            <span class="menu-item-price">$25</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><span class="menu-item-name">Vaso Chelado</span></div>
+            <span class="menu-item-price">$15</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><span class="menu-item-name">Vaso Cubano</span></div>
+            <span class="menu-item-price">$20</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mixología -->
+      <div class="menu-subsection">
+        <p class="menu-subsection-title">Mixología</p>
+        <div class="menu-items">
+
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Berry Special</span>
+              <span class="menu-item-desc">Absolut raspberry, jarabe natural, jugo de limón, infusión de jamaica.</span>
+            </div>
+            <span class="menu-item-price">$100</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">The Moth</span>
+              <span class="menu-item-desc">Jack Daniels, limón eureka, naranja, toronja y jarabe de goma.</span>
+            </div>
+            <span class="menu-item-price">$110</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Chili Mango</span>
+              <span class="menu-item-desc">Mezcal Creyentes joven, licor de chile ancho, jugo de naranja, pulpa de mango, jugo de limón, miel de agave y un top de cerveza obscura.</span>
+            </div>
+            <span class="menu-item-price">$115</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Brooklyn</span>
+              <span class="menu-item-desc">Tequila Centenario Reposado, conserva de kiwi, albahaca, yerbabuena, limón eureka, pepino y melón.</span>
+            </div>
+            <span class="menu-item-price">$115</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Lemon Pay Martini</span>
+              <span class="menu-item-desc">Licor 43, leche, jugo de limón eureka, jarabe natural y crema batida.</span>
+            </div>
+            <span class="menu-item-price">$135</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Morfología -->
+      <div class="menu-subsection">
+        <p class="menu-subsection-title">Morfología</p>
+        <div class="menu-items">
+
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Tropical Tequila</span>
+              <span class="menu-item-desc">Red Bull tropical adimón, tequila, limón y sal.</span>
+            </div>
+            <span class="menu-item-price">$200</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Sandía Spritz</span>
+              <span class="menu-item-desc">Red Bull sandía edition, aperol, prosecco.</span>
+            </div>
+            <span class="menu-item-price">$200</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Cíclope</span>
+              <span class="menu-item-desc">SnowBXT, jarabe natural, chile de árbol seco, infusión de fresa, jugo de limón eureka y un top de cerveza obscura.</span>
+            </div>
+            <span class="menu-item-price">$200</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Pistargot</span>
+              <span class="menu-item-desc">Conserva de pistacho, menta, albahacas, limón real, leche de coco, limonada y té de menta.</span>
+            </div>
+            <span class="menu-item-price">$200</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Mamba</span>
+              <span class="menu-item-desc">Bacardí blanco, jarabe natural, jugo de limón eureka, jugo de piña, infusión de maracuyá y un top de cerveza de jengibre.</span>
+            </div>
+            <span class="menu-item-price">$200</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Raven</span>
+              <span class="menu-item-desc">Mezcal creyente joven 33, manzanita, infusión de jamaica, miel de agave y jugo de limón eureka.</span>
+            </div>
+            <span class="menu-item-price">$200</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Elixir Escorpión</span>
+              <span class="menu-item-desc">Copa de mezcal con escorpión real. / Shot de mezcal con dos alas de escorpión.</span>
+            </div>
+            <div class="menu-item-price-dual">
+              <span class="price-line">$280 copa</span>
+              <span class="price-line">$360 shot</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Mockteles -->
+      <div class="menu-subsection">
+        <p class="menu-subsection-title">Mockteles</p>
+        <div class="menu-items">
+
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Mango Mule</span>
+              <span class="menu-item-desc">Jugo de lima, pulpa de mango, syrup de miel, pepino, menta y un top de ginger ale.</span>
+            </div>
+            <span class="menu-item-price">$95</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">San Francisco</span>
+              <span class="menu-item-desc">Jugo de limón, jugo de piña, granadina y un top de agua mineral.</span>
+            </div>
+            <span class="menu-item-price">$95</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Choque de Frutos Rojos</span>
+              <span class="menu-item-desc">Jarabe de la pasión, hojas de menta, jarabe natural, jarabe de naranja, jarabe de jengibre, té de jamaica, limón y top de cerveza de jengibre.</span>
+            </div>
+            <span class="menu-item-price">$115</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Al Rojo Vivo</span>
+              <span class="menu-item-desc">Té de jamaica, jugo de toronja, jarabe de miel de canela y un top de refresco de toronja.</span>
+            </div>
+            <span class="menu-item-price">$115</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Carajillos -->
+      <div class="menu-subsection">
+        <p class="menu-subsection-title">Carajillos</p>
+        <div class="menu-items">
+
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Carajillo</span>
+              <span class="menu-item-desc">Licor 43, café expreso y moscas de café.</span>
+            </div>
+            <span class="menu-item-price">$95</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Chantajillo</span>
+              <span class="menu-item-desc">Rumchata, café expreso, canela y almendra rallada.</span>
+            </div>
+            <span class="menu-item-price">$99</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Morfo</span>
+              <span class="menu-item-desc">Rumchata, licor 43, baileys, café expreso, canela y avellana.</span>
+            </div>
+            <span class="menu-item-price">$145</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Mezcalito</span>
+              <span class="menu-item-desc">Mezcal, licor 43, helado de vainilla y café expreso.</span>
+            </div>
+            <span class="menu-item-price">$145</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Cremajillo</span>
+              <span class="menu-item-desc">Café expreso, crema de tequila y moscas de café.</span>
+            </div>
+            <span class="menu-item-price">$145</span>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div><!-- /menu-content -->
+
+
+  <!-- ====================================================
+       FOOTER
+  ===================================================== -->
+  <footer class="footer">
+    <div class="footer-logo-wrap">
+      <!-- PENDIENTE: reemplazar por <img src="logo.png" alt="Morfo" style="max-width:80px;object-fit:contain;"> -->
+      <span class="footer-logo-text">MORFO<span>.</span></span>
+    </div>
+
+    <ul class="footer-nav">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="menu.html">Menú</a></li>
+      <li><a href="https://wa.me/524791531472?text=Hola%2C%20quiero%20reservar%20una%20mesa%20en%20Morfo"
+             target="_blank" rel="noopener noreferrer">Reservar</a></li>
+    </ul>
+
+    <div class="footer-social">
+      <a href="https://www.instagram.com/morfo_mx"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Instagram de Morfo">
+        @morfo_mx
+      </a>
+    </div>
+
+    <p class="footer-copy">
+      &copy; Morfo Cocina Urbana Premium &middot; León, Gto.
+    </p>
+  </footer>
+
+
+  <!-- ====================================================
+       BOTÓN FLOTANTE WHATSAPP
+  ===================================================== -->
+  <a href="https://wa.me/524791531472?text=Hola%2C%20quiero%20hacer%20una%20reservaci%C3%B3n%20en%20Morfo"
+     class="whatsapp-float"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morfo | Cocina Urbana Premium · León, Gto.</title>
+  <meta name="description" content="Street Glam Food en León. Cocina urbana con técnica de alta cocina, música en vivo y ambiente único. Blvd. Valtierra 7180.">
+  <meta property="og:title" content="Morfo | Cocina Urbana Premium">
+  <meta property="og:description" content="La gastronomía callejera elevada a experiencia premium. León, Gto.">
+  <!-- PENDIENTE: og:image con foto del interior o platillo estrella -->
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg'><text y='32' font-size='32'>🦋</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ====================================================
+       NAVBAR
+  ===================================================== -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="navbar-logo" aria-label="Morfo inicio">
+      <!-- PENDIENTE: reemplazar span por <img src="logo.png" alt="Morfo" class="navbar-logo-img"> cuando se entregue el archivo PNG -->
+      <span class="navbar-logo-text">MORFO<span>.</span></span>
+    </a>
+
+    <ul class="navbar-nav">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="menu.html">Menú</a></li>
+      <li><a href="#reservaciones">Reservaciones</a></li>
+      <li><a href="#ambiente">Nosotros</a></li>
+      <li>
+        <a href="https://wa.me/524791531472?text=Hola%2C%20quiero%20reservar%20una%20mesa%20en%20Morfo"
+           class="btn-reservar-nav"
+           target="_blank"
+           rel="noopener noreferrer">
+          Reservar mesa
+        </a>
+      </li>
+    </ul>
+
+    <button class="navbar-hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Menú móvil -->
+  <div class="navbar-mobile-menu" id="mobileMenu" role="dialog" aria-label="Menú de navegación">
+    <a href="index.html">Inicio</a>
+    <a href="menu.html">Menú</a>
+    <a href="#reservaciones">Reservaciones</a>
+    <a href="#ambiente">Nosotros</a>
+    <a href="https://wa.me/524791531472?text=Hola%2C%20quiero%20reservar%20una%20mesa%20en%20Morfo"
+       target="_blank" rel="noopener noreferrer">
+      Reservar mesa
+    </a>
+  </div>
+
+
+  <!-- ====================================================
+       HERO
+  ===================================================== -->
+  <section class="hero">
+
+    <!--
+      Firma visual: mariposa-tenedor del logo de Morfo,
+      redibujada como línea fina — solo visible ≥1024px.
+    -->
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 400 400"
+      class="hero-watermark"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <!-- Círculo exterior -->
+      <circle cx="200" cy="200" r="184" stroke="white" stroke-width="1" fill="none"/>
+
+      <!-- Tenedor — mango -->
+      <line x1="200" y1="210" x2="200" y2="350" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <!-- Tenedor — curva base -->
+      <path d="M178 210 Q189 225 200 210 Q211 225 222 210" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <!-- Tenedor — 4 dientes -->
+      <line x1="178" y1="210" x2="175" y2="148" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <line x1="189" y1="210" x2="188" y2="143" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <line x1="211" y1="210" x2="212" y2="143" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <line x1="222" y1="210" x2="225" y2="148" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+      <!-- Ala izquierda superior -->
+      <path d="M193 188 C168 174 102 136 62 160 C30 180 52 234 128 237 C157 238 183 222 197 212"
+            stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <!-- Ala izquierda inferior -->
+      <path d="M193 228 C158 242 80 270 68 314 C58 348 130 356 184 330 C197 322 200 308 200 290"
+            stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+      <!-- Ala derecha superior -->
+      <path d="M207 188 C232 174 298 136 338 160 C370 180 348 234 272 237 C243 238 217 222 203 212"
+            stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <!-- Ala derecha inferior -->
+      <path d="M207 228 C242 242 320 270 332 314 C342 348 270 356 216 330 C203 322 200 308 200 290"
+            stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+      <!-- Venas de alas -->
+      <path d="M118 187 C148 197 175 207 193 212" stroke="white" stroke-width="0.7" fill="none" opacity="0.8"/>
+      <path d="M118 228 C150 220 178 218 193 222" stroke="white" stroke-width="0.7" fill="none" opacity="0.8"/>
+      <path d="M282 187 C252 197 225 207 207 212" stroke="white" stroke-width="0.7" fill="none" opacity="0.8"/>
+      <path d="M282 228 C250 220 222 218 207 222" stroke="white" stroke-width="0.7" fill="none" opacity="0.8"/>
+
+      <!-- Antenas -->
+      <path d="M196 143 C184 116 170 96 162 78" stroke="white" stroke-width="1" fill="none" stroke-linecap="round"/>
+      <circle cx="161" cy="76" r="3.5" stroke="white" stroke-width="1" fill="none"/>
+      <path d="M204 143 C216 116 230 96 238 78" stroke="white" stroke-width="1" fill="none" stroke-linecap="round"/>
+      <circle cx="239" cy="76" r="3.5" stroke="white" stroke-width="1" fill="none"/>
+    </svg>
+
+    <div class="hero-content">
+      <span class="hero-supra">Street Glam Food &middot; León, Gto.</span>
+
+      <h1>La calle,<br>elevada.</h1>
+
+      <p class="hero-desc">
+        Cocina urbana con técnica de alta cocina. Música en vivo.<br>
+        Abiertos de martes a domingo.
+      </p>
+
+      <div class="hero-ctas">
+        <a href="menu.html" class="btn-primary">Ver el menú</a>
+        <a href="https://wa.me/524791531472?text=Hola%2C%20quiero%20hacer%20una%20reservaci%C3%B3n%20en%20Morfo"
+           class="btn-whatsapp-text"
+           target="_blank"
+           rel="noopener noreferrer">
+          Reservar por WhatsApp &nbsp;&rarr;
+        </a>
+      </div>
+    </div>
+
+    <div class="scroll-indicator" aria-hidden="true"></div>
+  </section>
+
+
+  <!-- ====================================================
+       BARRA DE DATOS
+  ===================================================== -->
+  <section class="data-bar fade-in" aria-label="Datos del restaurante">
+    <div class="data-bar-inner">
+
+      <div class="data-item">
+        <span class="data-num">305</span>
+        <span class="data-label">reseñas en Google</span>
+      </div>
+
+      <span class="data-sep" aria-hidden="true">|</span>
+
+      <div class="data-item">
+        <span class="data-num">$300&ndash;700</span>
+        <span class="data-label">por persona</span>
+      </div>
+
+      <span class="data-sep" aria-hidden="true">|</span>
+
+      <div class="data-item">
+        <span class="data-label">Música en vivo</span>
+      </div>
+
+      <span class="data-sep" aria-hidden="true">|</span>
+
+      <div class="data-item">
+        <span class="data-label">Martes a Domingo</span>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ====================================================
+       DESTACADOS DEL MENÚ
+  ===================================================== -->
+  <section class="featured fade-in" aria-label="Platillos destacados">
+
+    <div class="featured-header">
+      <h2>Lo que pides la segunda vez</h2>
+      <p class="subtitle-italic">y lo que pides la primera</p>
+    </div>
+
+    <div class="featured-grid">
+
+      <!-- Platillo 1 -->
+      <article class="dish-card">
+        <div class="img-placeholder" style="height:280px">
+          <span>Hamburguesa Morfo — pan brioche con sesame seeds, fondo oscuro</span>
+        </div>
+        <!-- FOTO: hamburguesa Morfo con pan brioche y sesame seeds, fondo oscuro -->
+        <div class="dish-info">
+          <h3 class="dish-name">Hamburguesa Morfo</h3>
+          <p class="dish-desc">Pan brioche artesanal, carne Angus, sosa de cebolla, queso, ensalada de col, papas fritas caseras.</p>
+          <span class="dish-price">$240</span>
+        </div>
+      </article>
+
+      <!-- Platillo 2 -->
+      <article class="dish-card">
+        <div class="img-placeholder" style="height:280px">
+          <span>Birria de Gyzkas — servida en platón negro del restaurante</span>
+        </div>
+        <!-- FOTO: birria de gyzkas servida en platón negro del restaurante -->
+        <div class="dish-info">
+          <h3 class="dish-name">Birria de Gyzkas</h3>
+          <p class="dish-desc">Gyzkas (tlayudas) de costras de jamón, limón, mix de alejas, 10 piezas.</p>
+          <span class="dish-price">$165</span>
+        </div>
+      </article>
+
+      <!-- Platillo 3 -->
+      <article class="dish-card">
+        <div class="img-placeholder" style="height:280px">
+          <span>Ceviche en Coco — con aguacate y chips de tortilla verde, fondo negro</span>
+        </div>
+        <!-- FOTO: ceviche en coco con aguacate y chips de tortilla verde, fondo negro -->
+        <div class="dish-info">
+          <h3 class="dish-name">Ceviche en Coco</h3>
+          <p class="dish-desc">Ceviche con aguacate, semillas de ajonjolí, chips de tortilla verde, servido en coco.</p>
+          <!-- PENDIENTE: confirmar precio con cliente -->
+          <span class="dish-price-pending">Precio por confirmar</span>
+        </div>
+      </article>
+
+      <!-- Platillo 4 -->
+      <article class="dish-card">
+        <div class="img-placeholder" style="height:280px">
+          <span>Taco de Birria al Vapor — en tazón negro con consomé naranja</span>
+        </div>
+        <!-- FOTO: taco de birria al vapor en tazón negro con consomé naranja -->
+        <div class="dish-info">
+          <h3 class="dish-name">Taco de Birria al Vapor</h3>
+          <p class="dish-desc">Relleno de fajitas de res cocinada a baja temperatura, en consomé rojo.</p>
+          <span class="dish-price">$175</span>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="featured-link-wrap">
+      <a href="menu.html" class="link-menu">Menú completo &rarr;</a>
+    </div>
+
+  </section>
+
+
+  <!-- ====================================================
+       AMBIENTE
+  ===================================================== -->
+  <section class="ambiente fade-in" id="ambiente" aria-label="El lugar">
+
+    <div class="ambiente-text">
+      <span class="section-label">El Lugar</span>
+      <h2>Selva. Luces.<br>Buena comida.</h2>
+      <p>El techo tiene raíces. Las lámparas son de oro. La vajilla es negra. Y la comida hace que todo eso importe menos.</p>
+      <p>Morfo está en Blvd. Valtierra &mdash; abierto desde las 2 pm.</p>
+      <p class="ambiente-musica">Música en vivo &middot; Jueves a Sábado desde las 8:30 pm</p>
+    </div>
+
+    <div class="ambiente-img">
+      <div class="img-placeholder" style="height:520px">
+        <span>Interior Morfo — mesas largas de madera teca con vajilla negra y plantas tropicales al fondo</span>
+      </div>
+      <!-- FOTO: interior Morfo, mesa larga con sillas cognac y palmas al fondo -->
+    </div>
+
+  </section>
+
+
+  <!-- ====================================================
+       RESERVACIONES
+  ===================================================== -->
+  <section class="reservaciones fade-in" id="reservaciones">
+    <h2>&iquest;Tienes una fecha?</h2>
+    <span class="subtitle-italic">Reserva por WhatsApp &mdash; sin formularios, sin esperas.</span>
+    <a href="https://wa.me/524791531472?text=Hola%2C%20quiero%20reservar%20una%20mesa%20en%20Morfo"
+       class="btn-primary"
+       target="_blank"
+       rel="noopener noreferrer">
+      Reservar mesa &mdash; 479 153 1472
+    </a>
+    <p class="reservaciones-note">
+      Se recomienda reservación &middot; Blvd. Vicente Valtierra 7180, León, Gto.
+    </p>
+  </section>
+
+
+  <!-- ====================================================
+       RESEÑAS
+  ===================================================== -->
+  <section class="resenas fade-in" aria-label="Opiniones de clientes">
+
+    <div class="resenas-header">
+      <span class="resenas-supra">305 opiniones en Google</span>
+      <span class="rating-number">4.0</span>
+      <span class="rating-sub">de 5 estrellas &middot; 305 reseñas verificadas</span>
+    </div>
+
+    <div class="resenas-grid">
+
+      <article class="resena-card">
+        <div class="resena-stars" aria-label="4 de 5 estrellas">
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star empty">&#9733;</span>
+        </div>
+        <p class="resena-texto">
+          "Excelente lugar para ir a tomar algunas bebidas bien preparadas.
+          El concepto del restaurante me parece bien. La música es buena y adecuada."
+        </p>
+        <span class="resena-autor">jose guel</span>
+      </article>
+
+      <article class="resena-card">
+        <div class="resena-stars" aria-label="4 de 5 estrellas">
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star empty">&#9733;</span>
+        </div>
+        <p class="resena-texto">
+          "El lugar es muy bonito. Tardamos más de 20 minutos,
+          aunque la atención fue buena."
+        </p>
+        <span class="resena-autor">Verónica Martínez</span>
+      </article>
+
+      <article class="resena-card">
+        <div class="resena-stars" aria-label="4 de 5 estrellas">
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star empty">&#9733;</span>
+        </div>
+        <p class="resena-texto">
+          "El lugar es bonito y nuevo, me gustó la decoración y su música en vivo."
+        </p>
+        <span class="resena-autor">Adrian Salcedo</span>
+      </article>
+
+    </div>
+  </section>
+
+
+  <!-- ====================================================
+       HORARIOS + MAPA
+  ===================================================== -->
+  <section class="horarios-mapa fade-in" aria-label="Horarios y ubicación">
+
+    <div class="horarios">
+      <h3>Horarios</h3>
+
+      <div class="horario-row">
+        <span class="horario-dia">Martes &ndash; Miércoles</span>
+        <span class="horario-hora">2:00 pm &ndash; 11:00 pm</span>
+      </div>
+      <div class="horario-row">
+        <span class="horario-dia">Jueves &ndash; Sábado</span>
+        <span class="horario-hora">2:00 pm &ndash; 12:00 am</span>
+      </div>
+      <div class="horario-row">
+        <span class="horario-dia">Domingo</span>
+        <span class="horario-hora">2:00 pm &ndash; 8:00 pm</span>
+      </div>
+      <div class="horario-row">
+        <span class="horario-dia">Lunes</span>
+        <span class="horario-hora cerrado">Cerrado</span>
+      </div>
+
+      <div class="horarios-info">
+        <p>Blvd. Vicente Valtierra 7180, Fracciones Cañada de Alfaro,</p>
+        <p>37299 León de los Aldama, Gto.</p>
+        <p><a href="tel:+524791531472">479 153 1472</a></p>
+      </div>
+    </div>
+
+    <div class="mapa-container">
+      <iframe
+        src="https://maps.google.com/maps?q=Blvd+Vicente+Valtierra+7180+Le%C3%B3n+Guanajuato+M%C3%A9xico&t=&z=15&ie=UTF8&iwloc=&output=embed"
+        width="100%"
+        height="350"
+        allowfullscreen=""
+        loading="lazy"
+        title="Ubicación Morfo Cocina Urbana Premium — León, Gto."
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+
+  </section>
+
+
+  <!-- ====================================================
+       FOOTER
+  ===================================================== -->
+  <footer class="footer">
+    <div class="footer-logo-wrap">
+      <!-- PENDIENTE: reemplazar por <img src="logo.png" alt="Morfo" style="max-width:80px;object-fit:contain;"> -->
+      <span class="footer-logo-text">MORFO<span>.</span></span>
+    </div>
+
+    <ul class="footer-nav">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="menu.html">Menú</a></li>
+      <li><a href="https://wa.me/524791531472?text=Hola%2C%20quiero%20reservar%20una%20mesa%20en%20Morfo"
+             target="_blank" rel="noopener noreferrer">Reservar</a></li>
+    </ul>
+
+    <div class="footer-social">
+      <a href="https://www.instagram.com/morfo_mx"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Instagram de Morfo">
+        @morfo_mx
+      </a>
+    </div>
+
+    <p class="footer-copy">
+      &copy; Morfo Cocina Urbana Premium &middot; León, Gto.
+    </p>
+  </footer>
+
+
+  <!-- ====================================================
+       BOTÓN FLOTANTE WHATSAPP
+  ===================================================== -->
+  <a href="https://wa.me/524791531472?text=Hola%2C%20quiero%20hacer%20una%20reservaci%C3%B3n%20en%20Morfo"
+     class="whatsapp-float"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script src="main.js"></script>
+</body>
+</html>
